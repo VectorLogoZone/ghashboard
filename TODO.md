@@ -1,16 +1,20 @@
 # To Do
 
-- [ ] security notes page
-- [ ] screenshot of warning when enabling Github Actions
 - [ ] customization page
-- [ ] Fix: `pages-build-deployment` *do* have working flags - [Github Bug](https://support.github.com/ticket/personal/0/2545577)
+- [ ] security notes page
+      - screenshot of warning when enabling Github Actions
+- [ ] instructions w/screenshots
+- [ ] instructions w/screencast (or video?)
+
 - [ ] switch template data from array to struct with array as a property, and add more properties (Title, Created, Header)
 - [ ] Golang template function `markdown` to escape markdown
-- [ ] dogfood GHA: build a ghashboard of my stuff
 - [ ] fork-is-current GHA
-- [ ] demo GHA: find a couple orgs with a middling number of GHAs for a demo ghashboard
 - [ ] support multi-line env vars for `[]String` flags
+
+- [ ] dogfood GHA: build a ghashboard of my stuff
+- [ ] demo GHA: find a couple orgs with a middling number of GHAs for a demo ghashboard
 - [ ] make releases
+- [ ] Fix: `pages-build-deployment` *do* have working flags - [Github Bug](https://support.github.com/ticket/personal/0/2545577)
 
 ## Bookmarks
 
@@ -25,10 +29,6 @@
 
 builds a list of repos
 
- * public: boolean 
- * private: boolean
- * forks: boolean
- * archived: boolean
  * repos: a list of repos (or @filename), bypasses all flags
 
 ## workflows.go
@@ -36,6 +36,7 @@ builds a list of repos
 builds a list of actions for each repo
 
  * empty flag: include repos w/o workflows in the list (for non-workflow badges)
+ * include/exclude: support for regexes
 
 ## badges.go
 
